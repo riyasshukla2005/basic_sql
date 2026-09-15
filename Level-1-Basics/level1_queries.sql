@@ -1,7 +1,7 @@
-create database company_db;
+create database company_db;  --creating a database
 use company_db;
 show databases;
-create table employees (
+create table employees (     --create employee table with attributes
 id int primary key,
 name varchar(50),
 department varchar(50),
@@ -10,7 +10,7 @@ city varchar(50),
 age int,
 joining_year int
 );
-insert into employees
+insert into employees          --inserting values into the table
 values
 (1, 'Riya',	'IT', 60000, 'Delhi', 22, 2024),
 (2, 'Aman',	'HR', 45000, 'Dehradun', 24, 2023),
@@ -23,9 +23,9 @@ values
 (9,	'Ananya', 'Finance', 65000,	'Delhi', 26, 2021),
 (10, 'Rohit', 'Finance', 72000, 'Bangalore', 28, 2020);
 
-select * from employees;
+select * from employees;       --retrieve entire table
 
-select name, city from employees;
+select name, city from employees;     --retrieve name and city
 
 select name,salary 
 from employees
